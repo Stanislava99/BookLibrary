@@ -2,22 +2,26 @@ package com.example.bookLibrary;
 
 public class Book {
     private String title;
-    private long ISBN;
+    private String ISBN;
     private int year;
-    private String type;
+    protected enum Type {
+        EBook,
+        PrintCopy
+    }
+    private Type type;
     private Author author;
 
-    public Book(String title, long ISBN, int year, String type, Author author) {
+    public Book(String title, String ISBN, int year, Type type, Author author) {
         this.title = title;
         this.ISBN = ISBN;
         this.year = year;
-        this.type = type;
+        this.type=type;
         this.author = author;
     }
 
     @Override
     public String toString() {
-        return title +" - "+ author.getName()+" "+ author.getSurname()+" - "+year;
+        return title + " - " + author.getName() + " " + author.getSurname() + " - " + year;
     }
 
     public int getYear() {
