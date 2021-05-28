@@ -1,4 +1,4 @@
-package com.example.javaGraduate;
+package com.example.bookLibrary;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -77,7 +77,7 @@ public class Main {
             }
         }
     }
-// Prints authors that have more than 3 books 
+// Prints authors that have more than 3 books
     public static void authorsThreeBooks(List<Author> authors, List<Book> books){
         for(Author author:authors){
             int count=0;

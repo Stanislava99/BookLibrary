@@ -1,4 +1,4 @@
-package com.example.javaGraduate;
+package com.example.bookLibrary;
 
 public class Ebook extends Book{
     private String typeOfFormat;

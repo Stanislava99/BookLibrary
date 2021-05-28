@@ -1,4 +1,4 @@
-package com.example.javaGraduate;
+package com.example.bookLibrary;
 
 public class Book {
     private String title;
