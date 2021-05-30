@@ -31,4 +31,8 @@ public class Book {
     public Author getAuthor() {
         return author;
     }
+
+    public String getISBN() {
+        return ISBN;
+    }
 }

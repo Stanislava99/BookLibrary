@@ -33,7 +33,7 @@ public class Main {
         books.add(0, new EBook("Angels and Demons", "96584732", 2000, authors.get(3), com.example.bookLibrary.EBook.Format.pdf, 300));
 
         startText();
-        int number;
+
         char character;
         boolean breakFlag = true;
 
