@@ -27,7 +27,7 @@ Main class has the answers to all requirements of exercise 1 and 2. Here are its
   
 In the main function, two Lists were made. One of type Book, and one of type Author. List<Book> collects all the books from EBook as well as from PrintBook type (class). Similar, List<Author> collects all authors of the books. As an example, both Lists are filled with informations who can demonstrate that functions mentioned earlier work and are called, ready for compile and run. 
 
-    I used Java version 15
+    I used Java version 16
     ----------------------------------
     Here's how to run it from terminal:
       Unzip the downloaded folder
