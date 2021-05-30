@@ -6,6 +6,7 @@ As asked, 4 classes were made.
 
 Class Book is a class that contains information about the book, its title, ISBN, type, release date and author. 
 It also has 3 functions: 
+
   toString() - returns the name of the book, author's name and year of release;
   getYear() - getter that returns the year;
   getAuthor() - getter that returns the object author.
@@ -17,6 +18,7 @@ Class PrintCopy, also is inherited by the class Book, and it's another special t
 Class Author represents the authors of the books, its name, surname and year of birth. It has getter for each variable and toString() function that returns the author's name and surname.
 
 Main class has the answers to all requirements of exercise 1 and 2. Here are its features:
+
   printBooks() -  Prints all the books in increasing (year) order
   getBooksBySurname() - Prints all the books whose author's last name starts with entered character
   auhtorBooksDecade() - Prints all the books that are written in the authors' decade
