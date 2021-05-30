@@ -33,47 +33,52 @@ public class Main {
         books.add(0, new EBook("Angels and Demons", "96584732", 2000, authors.get(3), com.example.bookLibrary.EBook.Format.pdf, 300));
 
         startText();
-        int number = 0;
+        int number;
         char character;
-        while (number != 6) {
+        boolean breakFlag = true;
+
+        while (breakFlag) {
             System.out.println("Enter a number: ");
-            number = input.nextInt();
+            switch (input.nextInt()) {
 
-            if (number > 6 && number < 1) {
-                System.out.println("Error input, try again");
-                startText();
-                number = input.nextInt();
-            } else if (number == 1) {
-                System.out.println("----------------------");
-                printBooks(books);
-                System.out.println("----------------------");
+                case 1:
+                    System.out.println("----------------------");
+                    printBooks(books);
+                    System.out.println("----------------------");
+                    break;
+                case 2:
+                    System.out.println("Enter first letter of author's last name");
+                    character = input.next().charAt(0);
+                    System.out.println("----------------------");
+                    getBooksBySurname(character, books);
+                    System.out.println("----------------------");
+                    break;
+                case 3:
+                    System.out.println("----------------------");
+                    authorBooksDecade(authors.get(4), books);
+                    System.out.println("----------------------");
+                    break;
 
+                case 4:
+                    System.out.println("----------------------");
+                    authorsThreeBooks(authors, books);
+                    System.out.println("----------------------");
+                    break;
+                case 5:
+                    System.out.println("----------------------");
+                    booksOldestNewest(books);
+                    System.out.println("----------------------");
+                    break;
+                case 6:
+                    System.out.println("End!");
+                    breakFlag = false;
+                    break;
+                default:
+                    System.out.println("Error input, try again");
 
-            } else if (number == 2) {
-                System.out.println("Enter first letter of author's last name");
-                character = input.next().charAt(0);
-                System.out.println("----------------------");
-                getBooksBySurname(character, books);
-                System.out.println("----------------------");
-
-            } else if (number == 3) {
-                System.out.println("----------------------");
-                authorBooksDecade(authors.get(4), books);
-                System.out.println("----------------------");
-
-            } else if (number == 4) {
-                System.out.println("----------------------");
-                authorsThreeBooks(authors, books);
-                System.out.println("----------------------");
-
-            } else if (number == 5) {
-                System.out.println("----------------------");
-                booksOldestNewest(books);
-                System.out.println("----------------------");
 
             }
         }
-        System.out.println("End!");
     }
 
     public static void startText() {
