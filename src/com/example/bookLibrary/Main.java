@@ -82,13 +82,14 @@ public class Main {
     }
 
     public static void startText() {
-        System.out.println("Welcome, choose what you want to do(with number) \n" +
-                "1 - Print all the books in increasing (year) order \n" +
-                "2 - Prints all the books whose author's last name starts with entered character \n" +
-                "3 - Prints all the books that are written in the authors' decade \n" +
-                "4 - Prints authors that have more than 3 books \n" +
-                "5 - Prints the oldest and the newest book added \n" +
-                "6 - Exit");
+        System.out.println("""
+                Welcome, choose what you want to do(with number)\s
+                1 - Print all the books in increasing (year) order\s
+                2 - Prints all the books whose author's last name starts with entered character\s
+                3 - Prints all the books that are written in the authors' decade\s
+                4 - Prints authors that have more than 3 books\s
+                5 - Prints the oldest and the newest book added\s
+                6 - Exit""");
     }
 
     //Prints all the books in increasing (year) order
